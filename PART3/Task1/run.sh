@@ -20,4 +20,4 @@ pip3 install pyspark
 
 spark-3.3.4-bin-hadoop3/bin/spark-submit \
     --master spark://10.10.1.1:7077 \
-    part3-1.py $INPUT_FILE $OUTPUT_FILE
+    pagerank_task1.py $INPUT_FILE $OUTPUT_FILE
