@@ -21,7 +21,6 @@ def create_spark_application(input_file_path, output_file_path):
     #Initialize a rank for each node as 1
     rank = node_rdd.map(lambda node: (node, 1))
     '''
-
     # Split every line by tab and get the first and second value as the source and destination nodes
     # Group by key to get the destination nodes for each source node
     links = filtered_rdd.map(lambda line: (line.split("\t")[0],line.split("\t")[1])).groupByKey()
