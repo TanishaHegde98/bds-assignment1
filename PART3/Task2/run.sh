@@ -6,7 +6,7 @@
 
 # Get input file path from user
 DEFAULT_INPUT_FILE="hdfs://10.10.1.1:9000/web-BerkStan.txt"
-DEFAULT_OUTPUT_FILE="hdfs://10.10.1.1:9000/pagerank_task1.txt"
+DEFAULT_OUTPUT_FILE="hdfs://10.10.1.1:9000/part3-2.txt"
 
 read -p "Enter the input file path [default: $DEFAULT_INPUT_FILE]: " INPUT_FILE
 INPUT_FILE=${INPUT_FILE:-$DEFAULT_INPUT_FILE}
