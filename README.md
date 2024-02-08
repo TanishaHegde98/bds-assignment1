@@ -1,10 +1,10 @@
 # CS744 Big Data Systems Assignment 1
 
 ## Project Team
-- Aanandita Dhawan
-- Aboli Pai
-- Lakshika Rathi
-- Tanisha Hegde
+- Aanandita Dhawan (dhawan6@wisc.edu)
+- Aboli Pai (apai7@wisc.edu)
+- Lakshika Rathi (lrathi@wisc.edu)
+- Tanisha Hegde (tghegde@wisc.edu)
 
 ## Problem
 
@@ -26,6 +26,8 @@ git clone https://github.com/TanishaHegde98/bds-assignment1.git
 ## Data Sorting Spark Application
 
 ```bash
+cd src/data_sorting/
+
 ./run.sh input_file_path output_file_path
 
 #for example: 
@@ -35,8 +37,23 @@ git clone https://github.com/TanishaHegde98/bds-assignment1.git
 ## PageRank Subparts 1,2,3
 
 ```bash
-cd PART3
-cd Task1
+#for subpart1:
+cd src/pagerank/Subpart1
+
 ./run.sh input_file_path output_file_path
+
+#for example:
+./run.sh web-BerkStan.txt rank.txt
 ```
 
+## Project Structure
+
+The project repository is organized as follows:
+
+- `README.md`: This README file providing an overview of the assignment and project structure.
+- `src/`: Contains the source code for implementing the data sorting and PageRank tasks.
+  - `data_sorting/`: Directory for data sorting-related code and scripts.
+  - `pagerank/`: Directory for PageRank algorithm implementation and related tasks.
+- `report.pdf`: Detailed report documenting the methodology, experimentation, and analysis conducted during the assignment.
+
+For any inquiries or assistance, please reach out to the project team members listed above.
