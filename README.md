@@ -17,7 +17,7 @@
 - **Task 3 - RDD Persistence:** Explore in-memory RDD persistence and assess its impact.
 - **Task 4 - Failure Simualtion:** Simulate Worker process failure and monitor the system's response. Trigger the failure when the application is halfway through its lifecycle.
 
-## Project Cloning
+## Clone Cmd
 
 ```bash
 git clone https://github.com/TanishaHegde98/bds-assignment1.git
@@ -30,6 +30,7 @@ git clone https://github.com/TanishaHegde98/bds-assignment1.git
 
 #for example: 
 ./run.sh /proj/uwmadison744-s24-PG0/data-part3/enwiki-pages-articles/ wiki_output
+```
 
 ## PageRank Subparts 1,2,3
 
