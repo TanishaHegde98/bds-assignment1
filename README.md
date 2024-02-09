@@ -15,7 +15,7 @@
 - **Task 1 - Algorithm Implementation:** Develop a Spark application in Scala/Python/Java to execute the PageRank algorithm.
 - **Task 2 - Custom RDD Partitioning:** Implement customized RDD partitioning and analyze resulting changes.
 - **Task 3 - RDD Persistence:** Explore in-memory RDD persistence and assess its impact.
-- **Task 4 - Failure Simualtion:** Simulate Worker process failure and monitor the system's response. Trigger the failure when the application is halfway through its lifecycle.
+- **Task 4 - Failure Simualtion:** Simulate Worker process failure and monitor the system's response. Trigger the failure when the application is 25% and 75% through its lifecycle.
 
 ## Clone Cmd
 
