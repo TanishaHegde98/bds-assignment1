@@ -26,6 +26,7 @@ def create_spark_application(input_file_path, output_file_path):
 
     # Split every line by tab and get the first and second value as the source and destination nodes
     # Group by key to get the destination nodes for each source node
+    # Custom Partition the data with a desired value
     links = filtered_rdd.map(lambda line: (line.split("\t")[0],line.split("\t")[1])).groupByKey().partitionBy(numPartitions)
 
     # Get the distinct nodes from the links rdd and initialize a rank for each node as 1
@@ -36,6 +37,7 @@ def create_spark_application(input_file_path, output_file_path):
         # Calcluate the contributions of each node to the rank of other nodes
         # Join the links and rank rdd to get a tuple of (source_node, (destination_nodes, rank))
         # Calculate the contributions per page by dividing the rank of the source node to the number of destination nodes and map it for every destination node (page)
+        # Custom Partition the data with a desired value
         contributions_per_page = links.join(rank).flatMap(lambda val: [(page, val[1][1]/len(val[1][0])) for page in val[1][0]]).partitionBy(numPartitions)
 
         # Sum the contributions per page received from other nodes
