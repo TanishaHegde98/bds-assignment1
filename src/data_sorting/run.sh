@@ -18,6 +18,6 @@ OUTPUT_FILE=${OUTPUT_FILE:-$DEFAULT_OUTPUT_FILE}
 sudo apt install python3-pip
 pip3 install pyspark
 
-spark-3.3.4-bin-hadoop3/bin/spark-submit \
+~/spark-3.3.4-bin-hadoop3/bin/spark-submit \
     --master spark://10.10.1.1:7077 \
     PART2-Sorting.py $INPUT_FILE $OUTPUT_FILE
