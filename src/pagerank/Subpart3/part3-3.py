@@ -18,6 +18,7 @@ def create_spark_application(input_file_path, output_file_path):
 
     # Set storage level to persist the rdd in memory
     # StorageLevel(useDisk, useMemory, useOffHeap, deserialized, replication)
+    # We change this to try for different persistent levels
     links = filtered_rdd.map(lambda line: (line.split("\t")[0],line.split("\t")[1])).groupByKey().persist(storageLevel=StorageLevel(False,True,False,False,1))
 
     rank = links.map(lambda node: (node[0], 1))
